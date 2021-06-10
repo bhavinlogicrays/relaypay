@@ -1,1 +1,0 @@
-Relay Pay Magento Extension
