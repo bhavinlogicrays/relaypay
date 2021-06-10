@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2021 RelayPay Development Inc. All rights reserved.
+ * See LICENSE for license details.
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <relaypay>
+                <active>0</active>
+                <title>Credit Card</title>
+                <environment>sandbox</environment>
+                <relaypay_sandbox_merchant_id></relaypay_sandbox_merchant_id>
+                <relaypay_sandbox_public_key></relaypay_sandbox_public_key>
+                <relaypay_sandbox_secret_key></relaypay_sandbox_secret_key>
+                <relaypay_production_merchant_id></relaypay_production_merchant_id>
+                <relaypay_production_public_key></relaypay_production_public_key>
+                <relaypay_production_secret_key></relaypay_production_secret_key>
+                <cgi_url_sandbox>https://sandbox-api.relaypay.io/</cgi_url_sandbox>
+                <cgi_url_production>https://api.relaypay.io/</cgi_url_production>
+                <relaypay_create_transction_request>api/v1/ecommerce/request</relaypay_create_transction_request>
+                <order_status>pending_payment</order_status>
+                <model>RelayPay\Payment\Model\PaymentMethod</model>
+            </relaypay>
+        </payment>
+    </default>
+</config>
