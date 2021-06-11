@@ -140,7 +140,7 @@ class Data extends AbstractHelper
      * @return string
      */
     public function getSandboxApiUrl()
-    {   
+    {
         //for website
         return $this->scopeConfig->getValue(
             self::XML_PATH_CGI_URL_SANDBOX,
@@ -152,7 +152,7 @@ class Data extends AbstractHelper
      * @return string
      */
     public function getProductionApiUrl()
-    {   
+    {
         //for website
         return $this->scopeConfig->getValue(
             self::XML_PATH_CGI_URL_PRODUCTION,

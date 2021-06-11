@@ -154,8 +154,8 @@ class Success extends \Magento\Framework\App\Action\Action
 
             $responseData = $paymentData = [];
             
-            if (isset($response['orderStatus']) && $response['orderStatus'] === 'Pending' ||
-                isset($response['orderStatus']) && $response['orderStatus'] === 'Success') {
+            if ((isset($response['orderStatus']) && $response['orderStatus'] === 'Pending') ||
+                (isset($response['orderStatus']) && $response['orderStatus'] === 'Success')) {
                
                 $responseData['transactionId'] = $response['transactionId'];
                 $responseData['orderId'] = $response['orderId'];
